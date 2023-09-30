@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <title>PostGenerator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="./styles/_normalize.css">
-  <link rel="stylesheet" href="./styles/_reset.css">
-  <link rel="stylesheet" href="./styles/_fontface.css">
-  <link rel="stylesheet" href="./styles/_variables.css">
+  <link rel="stylesheet" href="styles/global/normalize.css">
+  <link rel="stylesheet" href="styles/global/reset.css">
+  <link rel="stylesheet" href="styles/global/fontface.css">
+  <link rel="stylesheet" href="styles/global/variables.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/settings.css">
+  <link rel="stylesheet" href="styles/post.css">
+  <link rel="stylesheet" href="styles/controls.css">
 
   <script src="./lib/html2canvas.min.js"></script>
   <script src="./scripts/main.js" defer></script>
@@ -33,25 +36,38 @@
         </label>
       </div>
     </div>
+
+    <div class="settings__block">
+      <div class="settings__caption">Размер шрифта:</div>
+      <input type="number" name="font-size" value="16" class="settings__input-number">
+    </div>
+
+    <div class="settings__block">
+      <div class="settings__caption">Цветовая тема:</div>
+<!--      <label class="settings__theme settings__theme&#45;&#45;dark">-->
+<!--        <input type="radio" name="color-theme" value="dark">-->
+<!--        <span class="settings__theme-content"></span>-->
+<!--      </label>-->
+    </div>
   </div>
 
   <form class="post">
     <div id="post-ref" contenteditable="true" class="post__input">
       Напишите или сгенерируйте свой первый пост
     </div>
-
-    <div class="post__btns-wrapper">
-      <button id="save" type="button" class="post__btn">
-        Сохранить
-      </button>
-      <button id="generate-text" type="button" class="post__btn">
-        Рыбо-текст
-      </button>
-      <button id="link-download" type="button" class="post__btn">
-        Скачать в JPG
-      </button>
-    </div>
   </form>
+
+  <div class="controls">
+    <button id="save" type="button" class="controls__btn">
+      Сохранить
+    </button>
+    <button id="generate-text" type="button" class="controls__btn">
+      Рыбо-текст
+    </button>
+    <button id="link-download" type="button" class="controls__btn">
+      Скачать в JPG
+    </button>
+  </div>
 </main>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.controls {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.controls__btn {
+  padding: 14px 30px;
+  background-color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--border-radius-middle);
+  margin-left: 14px;
+  transition: all var(--transition-main);
+}
+
+.controls__btn:hover {
+  background-color: var(--color-yellow-2);
+}
+
+.controls__btn:first-child {
+  margin-left: 0;
+}
