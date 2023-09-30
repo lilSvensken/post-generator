@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PostGenerator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./styles/_normalize.css">
+  <link rel="stylesheet" href="./styles/_reset.css">
+  <link rel="stylesheet" href="./styles/_fontface.css">
+  <link rel="stylesheet" href="./styles/_variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="./lib/html2canvas.min.js"></script>
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+<main class="content">
+  <div class="settings">
+    <div class="settings__block">
+      <div class="settings__caption">Шрифт поста:</div>
+      <div class="settings__btns">
+        <label class="settings__btn">
+          <input type="radio" name="font" value="Concrete"/>
+          <span class="settings__btn-content">Concrete</span>
+        </label>
+        <label class="settings__btn">
+          <input type="radio" name="font" value="Inter"/>
+          <span class="settings__btn-content">Inter</span>
+        </label>
+        <label class="settings__btn">
+          <input type="radio" name="font" value="Ramona"/>
+          <span class="settings__btn-content">Ramona</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <form class="post">
+    <div id="post-ref" contenteditable="true" class="post__input">
+      Напишите или сгенерируйте свой первый пост
+    </div>
+
+    <div class="post__btns-wrapper">
+      <button id="save" type="button" class="post__btn">
+        Сохранить
+      </button>
+      <button id="generate-text" type="button" class="post__btn">
+        Рыбо-текст
+      </button>
+      <button id="link-download" type="button" class="post__btn">
+        Скачать в JPG
+      </button>
+    </div>
+  </form>
+</main>
+</body>
+</html>
