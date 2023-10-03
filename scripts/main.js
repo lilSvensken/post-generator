@@ -1,4 +1,4 @@
-import SettingsComponent from "./components/SettingsComponent.js";
+import SettingsComponent from "./components/settings/SettingsComponent.js";
 import { DownloadComponent } from "./components/DownloadComponent.js";
 import { GenerateTextComponent } from "./components/GenerateTextComponent.js";
 import { SaveStoreComponent } from "./components/SaveStoreComponent.js";

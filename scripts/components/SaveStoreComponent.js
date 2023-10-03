@@ -1,4 +1,4 @@
-import { LS_SAVE_POST } from "../utils/variables.js";
+import { LS_SAVE_POST } from "/scripts/utils/variables.js";
 
 export function SaveStoreComponent(postRef) {
   const saveBtn = document.getElementById('save');
