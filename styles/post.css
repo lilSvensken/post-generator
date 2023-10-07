@@ -12,26 +12,6 @@
   font-family: var(--font-family-Ramona), sans-serif;
 }
 
-.post__input.post__input--dark {
-  background-color: var(--color-dark);
-  color: var(--color-white);
-}
-
-.post__input.post__input--light {
-  background-color: var(--color-white);
-  color: var(--color-dark);
-}
-
-.post__input.post__input--pink {
-  background-color: var(--color-pink);
-  color: var(--color-white);
-}
-
-.post__input.post__input--neon {
-  background-color: var(--color-purple);
-  color: var(--color-green);
-}
-
 .post__input::selection {
   background-color: var(--color-yellow);
   color: var(--color-white);

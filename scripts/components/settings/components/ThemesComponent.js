@@ -3,19 +3,25 @@ import { LS_THEME } from "/scripts/utils/variables.js";
 export function ThemesComponent(postRef) {
   const themeBtns = document.querySelectorAll('[name="color-theme"]');
   const themeDefault = localStorage.getItem(LS_THEME);
-  if (themeDefault) setTheme(themeDefault);
+  if (themeDefault) {
+    const styles = JSON.parse(themeDefault);
+    if (styles) setStylesColor(styles.backgroundColor, styles.color)
+  }
   
   themeBtns.forEach(input => {
     input.oninput = () => {
-      setTheme(input.value);
+      const inputContentRef = input.closest('label').querySelector('span');
+      const inputStyles = window.getComputedStyle(inputContentRef);
+      setStylesColor(
+        inputStyles.backgroundColor,
+        inputStyles.borderColor
+      );
     }
   })
   
-  function setTheme(theme) {
-    const oldThemeClass = Array.from(postRef.classList).find(item => item.includes('post__input--'));
-    if (oldThemeClass) postRef.classList.remove(oldThemeClass);
-    postRef.classList.add('post__input');
-    postRef.classList.add(`post__input--${theme}`);
-    localStorage.setItem(LS_THEME, theme);
+  function setStylesColor(backgroundColor, color) {
+    postRef.style.backgroundColor = backgroundColor;
+    postRef.style.color = color;
+    localStorage.setItem(LS_THEME, JSON.stringify({ backgroundColor, color }));
   }
 }
