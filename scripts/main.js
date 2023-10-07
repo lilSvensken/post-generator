@@ -1,14 +1,15 @@
-import SettingsComponent from "./components/settings/SettingsComponent.js";
-import { DownloadComponent } from "./components/DownloadComponent.js";
-import { GenerateTextComponent } from "./components/GenerateTextComponent.js";
-import { SaveStoreComponent } from "./components/SaveStoreComponent.js";
+import SettingsComponent from "./components/settings/Settings.component.js";
+import { DownloadComponent } from "./components/Download.component.js";
+import { GenerateTextComponent } from "./components/GenerateText.component.js";
+import { SaveStoreComponent } from "./components/SaveStore.component.js";
 
 MainComponent();
 
 function MainComponent() {
+  const formRef = document.getElementById('form-ref');
   const postRef = document.getElementById('post-ref');
   
-  SettingsComponent(postRef);
+  SettingsComponent(formRef, postRef);
   DownloadComponent(postRef);
   GenerateTextComponent(postRef);
   SaveStoreComponent(postRef);
