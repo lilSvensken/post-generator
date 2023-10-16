@@ -8,6 +8,7 @@ export function SaveStoreComponent(postRef) {
   
   saveBtn.onclick = () => {
     localStorage.setItem(LS_SAVE_POST, postRef.innerText);
+    postRef.innerHTML = postRef.innerText;
     alert("Сохранено в Local Storage");
   }
 }
