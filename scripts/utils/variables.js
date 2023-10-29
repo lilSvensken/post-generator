@@ -3,3 +3,5 @@ export const LS_FONT_FAMILY = 'FONT_FAMILY';
 export const LS_FONT_SIZE = 'FONT_SIZE';
 export const LS_THEME = 'LS_THEME';
 export const LS_WATERMARK = 'LS_WATERMARK';
+
+export const DEFAULT_FONT_SIZE = 30;

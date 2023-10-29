@@ -23,12 +23,12 @@
       <div class="settings__caption">Шрифт поста:</div>
       <div class="settings__btns">
         <label class="settings__btn">
-          <input type="radio" name="font" value="Concrete"/>
-          <span class="settings__btn-content">Concrete</span>
-        </label>
-        <label class="settings__btn">
           <input type="radio" name="font" value="Inter"/>
           <span class="settings__btn-content">Inter</span>
+        </label>
+        <label class="settings__btn">
+          <input type="radio" name="font" value="Concrete"/>
+          <span class="settings__btn-content">Concrete</span>
         </label>
         <label class="settings__btn">
           <input type="radio" name="font" value="Ramona"/>
@@ -68,6 +68,10 @@
       <div class="settings__caption">Watermark</div>
       <div class="settings__btns">
         <label class="settings__btn">
+          <input type="radio" name="watermark" value=""/>
+          <span class="settings__btn-content">X</span>
+        </label>
+        <label class="settings__btn">
           <input type="radio" name="watermark" value="mmsdev"/>
           <span class="settings__btn-content">mms.dev</span>
         </label>
@@ -84,6 +88,9 @@
   <div class="controls">
     <button id="save" type="button" class="controls__btn">
       Сохранить
+    </button>
+    <button id="reset" type="button" class="controls__btn">
+      Сброс
     </button>
     <button id="generate-text" type="button" class="controls__btn">
       Рыбо-текст

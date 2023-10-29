@@ -4,10 +4,17 @@ import { ThemesComponent } from "./components/Themes.component.js";
 import { WatermarkComponent } from "./components/Watermark.component.js";
 
 function SettingsComponent(formRef, postRef) {
-  FontFamilyComponent(postRef);
-  FontSizeComponent(postRef);
-  ThemesComponent(postRef);
-  WatermarkComponent(formRef);
+  const fontFamilyComponent = FontFamilyComponent(postRef);
+  const fontSizeComponent = FontSizeComponent(postRef);
+  const themesComponent = ThemesComponent(postRef);
+  const watermarkComponent = WatermarkComponent(formRef);
+  
+  return {
+    fontFamilyComponent,
+    fontSizeComponent,
+    themesComponent,
+    watermarkComponent
+  };
 }
 
 export default SettingsComponent;
