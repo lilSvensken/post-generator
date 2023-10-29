@@ -9,11 +9,12 @@ MainComponent();
 function MainComponent() {
   const formRef = document.getElementById('form-ref');
   const postRef = document.getElementById('post-ref');
+  const loaderRef = document.getElementById('loader');
   
   InputPostComponent(postRef);
   const { fontFamilyComponent, fontSizeComponent, themesComponent, watermarkComponent } =
     SettingsComponent(formRef, postRef);
-  DownloadComponent(postRef);
+  DownloadComponent(postRef, loaderRef);
   GenerateTextComponent(postRef);
   SaveStoreComponent(postRef);
   

@@ -25,6 +25,10 @@
   color: var(--color-white);
 }
 
+.post__input--scale {
+  transform: scale(6);
+}
+
 .post__watermark {
   position: absolute;
   bottom: 4px;
