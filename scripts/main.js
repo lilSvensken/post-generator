@@ -14,7 +14,7 @@ function MainComponent() {
   InputPostComponent(postRef);
   const { fontFamilyComponent, fontSizeComponent, themesComponent, watermarkComponent } =
     SettingsComponent(formRef, postRef);
-  DownloadComponent(postRef, loaderRef);
+  DownloadComponent(formRef, loaderRef);
   GenerateTextComponent(postRef);
   SaveStoreComponent(postRef);
   

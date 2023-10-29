@@ -16,6 +16,10 @@ body {
   max-width: 100%;
 }
 
+.scale {
+  transform: scale(15);
+}
+
 .hide {
   display: none;
 }
